@@ -28,15 +28,17 @@
   <% end %>
 
   <br />
-  <div class="row">
-    <% @place.photos.each do |photo| %>
-      <div class="caption">
-        <%= image_tag photo.picture.url %>
-        <div class="clear"></div>
-        <%= photo.caption %>
-      </div>
-    <% end %>
+ 
+<% @place.photos.each do |photo| %>
+
+  <div>
+    <blockquote>
+      <%= image_tag photo.picture.url %>
+      <b><%= photo.picture %></b> -
+    </blockquote>
   </div>
+<% end %>
+
 
   <br />
 
