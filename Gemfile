@@ -72,6 +72,7 @@ gem 'geocoder'
 gem 'carrierwave', '~> 1.0'
 gem 'figaro'
 gem 'pry'
+gem 'fog-aws'
 
 
 source 'https://rails-assets.org' do
